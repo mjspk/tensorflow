@@ -104,6 +104,7 @@ def predicte(model, x_val, y_val):
         print("predicted probabilities:", predictions)
         pred_word = labels[np.argmax(predictions)]
         print("predicted word:", pred_word)
+        print("real word:", real_word)
         return x_test, real_word, pred_word
     else:
         print("Model or data not found")
